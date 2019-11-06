@@ -2,7 +2,7 @@
 
 This Website is being built on PHP Framework Codeigniter using CSS, Vanilla JavaScript and HTML.
 
-**Website features**
+**Website features:**
 
 - Full Responsive
 - Administration Panel for adding future products
