@@ -13,8 +13,8 @@ This Website is being built on PHP Framework Codeigniter using CSS, Vanilla Java
 
 
 **Installation:**
-   1.Go to: application/config/config.php and edit the  **base_url** to your path.
-   2.Upload **project.sql** file in phpmyadmin for the database import.
+   - Go to: application/config/config.php and edit the  **base_url** to your path.
+   - Upload **project.sql** file in phpmyadmin for the database import.
    
 **Enjoy!**
 
