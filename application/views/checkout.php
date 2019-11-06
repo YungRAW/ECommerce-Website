@@ -80,14 +80,14 @@ include "include/head.php";
             <tr class="shipping">
                 <th>Shipping and Handling</th>
                 <td>
-                    Rs. 1000/-
+                    25 Lei/-
                 </td>
             </tr>
 
 
             <tr class="order-total">
                 <th>Order Total</th>
-                <td><strong><span class="amount"><?php echo $netTotal = $total + 1000 ?>Lei/-</span></strong> </td>
+                <td><strong><span class="amount"><?php echo $netTotal = $total + 25 ?>Lei/-</span></strong> </td>
             </tr>
 
             </tfoot>
@@ -120,34 +120,27 @@ include "include/head.php";
                                     <p id="billing_first_name_field" class="form-row form-row-first validate-required">
                                         <label class="" for="billing_first_name">First Name <abbr title="required" class="required">*</abbr>
                                         </label>
-                                        <input type="text" value="" placeholder="" id="billing_first_name" name="fname" class="input-text" required="">
+                                        <input type="text" value="" placeholder="Introduceti Numele" id="billing_first_name" name="fname" class="input-text" required="">
                                         <input type="hidden" value="<?php echo $netTotal?>" placeholder="" id="billing_first_name" name="netTotal">
                                     </p>
 
                                     <p id="billing_last_name_field" class="form-row form-row-last validate-required">
                                         <label class="" for="billing_last_name">Last Name <abbr title="required" class="required">*</abbr>
                                         </label>
-                                        <input type="text" value="" placeholder="" id="billing_last_name" name="lname" class="input-text" required="">
+                                        <input type="text" value="" placeholder="Introduceti Prenumele" id="billing_last_name" name="lname" class="input-text" required="">
                                     </p>
                                     <div class="clear"></div>
 
                                     <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
                                         <label class="" for="billing_address_1">Address<abbr title="required" class="required">*</abbr>
                                         </label>
-                                        <input type="text" value="" placeholder="Street address" id="billing_address_1" name="address" class="input-text" required="">
+                                        <input type="text" value="" placeholder="Introduceti Adresa" id="billing_address_1" name="address" class="input-text" required="">
                                     </p>
 
                                     <p id="billing_country_field" class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated">
-                                        <label class="" for="billing_country">City of Pakistan<abbr title="required" class="required">*</abbr>
+                                        <label class="" for="billing_city">City<abbr title="required" class="required">*</abbr>
                                         </label>
-                                        <select class="country_to_state country_select" id="billing_country" name="city" required="">
-                                            <option value="">Select A City</option>
-                                            <option value="khi">Karachi</option>
-                                            <option value="isl">Islamabad</option>
-                                            <option value="lhr">Lahore</option>
-                                            <option value="psh">Peshawar</option>
-                                            <option value="que">Quetta</option>
-                                        </select>
+                                        <input type="text" value = "" placeholder="Introduceti Orasul" id = "biling_cityname" name="city" class="input-text" required="">   
                                     </p>
 
                                     <div class="clear"></div>

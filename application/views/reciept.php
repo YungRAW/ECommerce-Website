@@ -50,15 +50,15 @@
         <div class="">
             <span style="float: left;">
                 <b>ECigora Vapeshop</b><br/>
-                <i>shop #111 <br/>1<sup>st</sup> Electroputere Parc.</i>
+                <i>Electroputere Parc.</i></br>
+                <i>Calea București 80, Craiova 200440.</i>
             </span>
             <span style="float: right;">
-                <b>Contact no:</b><br/>
+                <b>Contact us:</b><br/>
 
                 <span>
-                    <b> Razvan </b> 0727763747
-                <br/>
-                    <b> Alexandru </b> 0786456398
+                    <b></b> 0727763747
+
                 </span>
 
             </span>
@@ -78,10 +78,10 @@
                     <table align="center" class="table table-hover table-responsive col-md-12">
                         <thead>
                         <tr>
-                            <th>qty</th>
-                            <th colspan="3">product name</th>
-                            <th>product price</th>
-                            <th>total</th>
+                            <th>Quantity</th>
+                            <th colspan="3">Product Name</th>
+                            <th>Product Price</th>
+                            <th>Total</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -104,7 +104,7 @@
                                 $pro_totals += $row->p_qty * $row->p_price;
                             }
 
-                            $pro_totals += 1000;
+                            $pro_totals += 25;
 
                         }
                         ?>
@@ -113,8 +113,8 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td colspan="2"><b>Delivery Charges :</b></td>
-                            <td><b>1000/-</b></td>
+                            <td colspan="2"><b>Delivery Charges:</b></td>
+                            <td><b>25/-</b></td>
                         </tr>
 
                         <tr>
