@@ -21,10 +21,10 @@ This Website is being built on PHP Framework Codeigniter using CSS, Vanilla Java
 
 **Quick Access:**
   For accessing Admin features
- Admin id = **as@as.com** password : **admin**
+ Admin id = **admin@ecigora.com** password : **admin**
  
   For accessing user/Restricted features
- user id = **ms@ms.com** password : **user**
+ user id = **yungr@gmail.com** password : **yungr**
 
 ###################
 What is CodeIgniter?
