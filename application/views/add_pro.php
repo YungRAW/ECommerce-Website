@@ -74,8 +74,16 @@
         </div>
 
         <div class="form-group">
-            <label for="">Product category:</label>
-            <input type="text" name="pro_cat" class="form-control" id="pwd">
+            <label for="">Product Category:</label>
+            <select class ="form-control" name = "pro_cat" id="pwd">
+                <option value="Moduri">Moduri</option>
+                <option value="Starter Kit">Starter Kit</option>
+                <option value="Lichide">Lichide</option>
+                <option value="Atomizoare">Atomizoare</option>
+                <option value="Clearomizoare">Clearomizoare</option>
+                <option value="Rezistente">Rezistente</option>
+            </select>
+            <!-- <input type="text" name="pro_cat" class="form-control" id="pwd"> -->
         </div>
 
         <div class="form-group">
