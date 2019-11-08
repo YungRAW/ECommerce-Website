@@ -16,7 +16,7 @@
                             if(isset($_SESSION['email'])){
                                 if(!$_SESSION['email'] == ''){
                                     ?>
-                                    <li><a href="<?php echo base_url() ?>index.php/Cart/viewCart"><i class="fa fa-shopping-cart"></i> My Cart</a></li>
+                                    <li><a href="<?php echo base_url() ?>index.php/Cart/viewCart"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
                                     <?php
 
                                 }
@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="logo">
-                    <h1><a href="<?php echo base_url() ?>index.php/Welcome">E Cigora<span> Vape Shop</span></a></h1>
+                    <h1><a href="<?php echo base_url() ?>index.php/Welcome">ECigora<span> Vape Shop</span></a></h1>
                 </div>
             </div>
 
@@ -85,7 +85,7 @@
                 ?>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Welcome : <?php echo $_SESSION['dis_name'] ?></a></li>
-                    <li><a href="<?php echo base_url() ?>index.php/Login/logout">Log out</a></li>
+                    <li><a href="<?php echo base_url() ?>index.php/Login/logout">Logout</a></li>
                     <?php
                     }
 

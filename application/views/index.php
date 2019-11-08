@@ -172,7 +172,7 @@ include "include/head.php";
                                         </div>
                                     </div>
 
-                                    <h2><a href="single-product.php"><?php echo $row->product_name ?></a></h2>
+                                    <h2><a href="<?php echo base_url() ?>index.php/Welcome/single?id=<?php echo $row->p_id ?>"><?php echo $row->product_name ?></a></h2>
 
                                     <div class="product-carousel-price">
                                         <ins><?php echo $row->product_price ?> Lei</ins>
@@ -200,7 +200,7 @@ include "include/head.php";
                         <img src="<?php echo base_url() ?>assets/img/backgrounds/1.png" alt="">
                         <img src="<?php echo base_url() ?>assets/img/backgrounds/2.png" alt="">
                         <img src="<?php echo base_url() ?>assets/img/backgrounds/3.png" alt="">
-                        <img src="<?php echo base_url() ?>assets/img/backgrounds/4.png" alt="">
+                        <img src="<?php echo base_url() ?>assets/img/backgrounds/4.jpg" alt="">
                         <img src="<?php echo base_url() ?>assets/img/backgrounds/5.png" alt="">
                         <img src="<?php echo base_url() ?>assets/img/backgrounds/6.png" alt="">
                         <img src="<?php echo base_url() ?>assets/img/backgrounds/7.png" alt="">

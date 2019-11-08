@@ -55,14 +55,12 @@ include "include/head.php";
     echo form_open('Shop/catFilter');
     ?>
     <select class=' add_to_cart_button' name="cat" id="">
-        <option value="mobile">Moduri</option>
-        <option value="tablet">Starter Kit</option>
-        <option value="tablet">Lichide</option>
-        <option value="tablet">Atomizoare</option>
-        <option value="tablet">Clearomizoare</option>
-        <option value="tablet">Rezistente</option>
-
-
+        <option value="Moduri">Moduri</option>
+        <option value="Starter Kit">Starter Kit</option>
+        <option value="Lichide">Lichide</option>
+        <option value="Atomizoare">Atomizoare</option>
+        <option value="Clearomizoare">Clearomizoare</option>
+        <option value="Rezistente">Rezistente</option>
     </select>
     <button class="add_to_cart_button" >Submit</button>
     <?php
@@ -80,7 +78,7 @@ if(isset($prods)){
                 <div class="product-upper">
                     <img style='height:300px; width:300px' src="<?php echo base_url() ?>uploads/<?php echo $row->file_name ?>" alt="">
                 </div>
-                <h2><a href=""><?php echo $row->product_name ?></a></h2>
+                <h2><a href="<?php echo base_url() ?>index.php/Welcome/single?id=<?php echo $row->p_id ?>"><?php echo $row->product_name ?></a></h2>
                 <div class="product-carousel-price">
                     <ins><?php echo $row->product_price ?> Lei</ins>
                 </div>
