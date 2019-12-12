@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: asamad
- * Date: 6/28/17
- * Time: 10:49 PM
- */
+
 
 class Shop extends CI_Controller
 {
@@ -26,6 +21,17 @@ class Shop extends CI_Controller
         $data['catData']=$query->result();
 
         $this->load->view('shop',$data);
+    }
+
+    function searchProduct(){
+
+        $product = $this->input->post('search');
+
+        $query = $this->Shop_model->searchProduct($product);
+
+        $data["spData"] = $query->result();
+
+        $this->load->view('shop', $data);
     }
 
 }

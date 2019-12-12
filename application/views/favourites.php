@@ -41,7 +41,7 @@ include "include/head.php";
         <div class="row">
             <div class="col-md-12">
                 <div class="product-bit-title text-center">
-                    <h2>Shopping Cart</h2>
+                    <h2>Favourite Products</h2>
                 </div>
             </div>
         </div>
@@ -64,26 +64,20 @@ include "include/head.php";
                                     <th class="product-thumbnail">&nbsp;</th>
                                     <th class="product-name">Product</th>
                                     <th class="product-price">Price</th>
-                                    <th class="product-quantity">Quantity</th>
-                                    <th class="product-subtotal">Total</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <?php
+                                    <?php
                                 if(isset($message)){
                                     echo $message;
                                 }
 
-                                $pro_total = 0;
-
-                                if(isset($v_cart)){
-                                    foreach($v_cart as $row){
-                                        $pro_total = $row->quantity * $row->product_price;
-                                        $row->proTotal = $pro_total;
+                                if(isset($v_favourites)){
+                                    foreach($v_favourites as $row){
                                         ?>
                                         <tr class="cart_item">
                                             <td class="product-remove">
-                                                <a title="Remove this item" class="btn remove" href="<?php echo base_url() ?>index.php/Cart/delItem?id=<?php echo $row->p_id ?>">×</a>
+                                                <a title="Remove this item" class="btn remove" href="<?php echo base_url() ?>index.php/Favourites/delItem?id=<?php echo $row->p_id ?>">×</a>
                                             </td>
 
                                             <td class="product-thumbnail">
@@ -95,21 +89,9 @@ include "include/head.php";
                                             </td>
 
                                             <td class="product-price">
-                                                <span class="amount"><?php echo $row->product_price ?>Lei</span>
+                                                <span class="amount"><?php echo $row->product_price ?> Lei</span>
                                             </td>
 
-                                            <td class="product-quantity">
-                                                <div class="quantity buttons_added">
-
-                                                    <!--<input type="number" size="4" class="input-text qty text" title="Qty" value="<?php echo $row->quantity ?>" min="0" step="1">-->
-                                                    <a href='<?php echo base_url() ?>index.php/Cart/editQty?todo=-&p_id=<?php echo $row->p_id ?>' class='btn'>-</a>
-                                                    <span ><?php echo $row->quantity ?></span>
-                                                    <a  href='<?php echo base_url() ?>index.php/Cart/editQty?todo=--&p_id=<?php echo $row->p_id ?>' class='btn' >+</a>
-                                                </div>
-
-                                            <td class="product-subtotal">
-                                                <span id="total" class="amount"><?php echo $pro_total ?> Lei</span>
-                                            </td>
                                         </tr>
 
 
@@ -117,24 +99,6 @@ include "include/head.php";
                                     }
                                 }
                                 ?>
-                                <?php
-                                if(isset($v_cart)){
-                                    $pro_totals = 0;
-                                    foreach($v_cart as $row){
-                                        $pro_totals += $row->proTotal;
-                                    }
-                                }
-
-                                ?>
-                                <tr>
-                                    <td class="actions" colspan="5">
-                                        <a href='<?php echo base_url() ?>index.php/Checkout?tot=<?php echo $pro_totals?>' class="btn btn-lg add_to_cart_button ">
-                                            Proceed To Checkout
-                                        </a>
-                                    </td>
-                                    <td><?php if(isset($pro_totals)){ echo ''.$pro_totals.'Lei /-';} ?></td>
-
-                                </tr>
                                 </tbody>
                             </table>
                         </form>

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: asamad
- * Date: 6/22/17
- * Time: 3:26 AM
- */
+
 
 class Register extends CI_Controller
 {

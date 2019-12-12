@@ -82,6 +82,7 @@ include "include/head.php";
 
 
                                         <a href="<?php echo base_url()?>index.php/Cart?id=<?php echo $row->p_id ?>" ><button class="add_to_cart_button" type="submit">Add to cart</button></a>
+                                        <a href="<?php echo base_url()?>index.php/Favourites?id=<?php echo $row->p_id?>"><button class="add_to_favourites_button" type="submit">Add to favourites</button></a>
                                         <br/><br/>
 
                                         <div role="tabpanel">
@@ -118,7 +119,7 @@ include "include/head.php";
                         <div class="related-products-carousel">
                             <?php
                             if(isset($relpro)){
-                                foreach($relpro as $row ){
+                                foreach($relpro as $row){  
                                     ?>
                             <div class="single-product">
                             <div class="product-f-image">

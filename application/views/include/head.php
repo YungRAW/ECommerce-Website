@@ -17,6 +17,7 @@
                                 if(!$_SESSION['email'] == ''){
                                     ?>
                                     <li><a href="<?php echo base_url() ?>index.php/Cart/viewCart"><i class="fa fa-shopping-cart"></i>My Cart</a></li>
+                                    <li><a href="<?php echo base_url() ?>index.php/Favourites/viewFavourites"><i class="heart fa fa-heart-o"></i>My Favorites</a></li>
                                     <?php
 
                                 }

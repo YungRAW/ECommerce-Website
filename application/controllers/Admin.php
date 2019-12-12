@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: asamad
- * Date: 6/29/17
- * Time: 2:02 PM
- */
 
 class Admin extends CI_Controller
 {

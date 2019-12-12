@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link rel="shortcut icon" href="<?php echo base_url()?>assets/img/logo.png" />
+    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/img/logo.png"/>
 
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet'
+          type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
 
@@ -57,8 +58,8 @@ include "include/head.php";
     <div id="order_review" style="position: relative;">
         <table class="shop_table">
             <?php
-            if(isset($total)){
-            $netTotal= 0;
+            if (isset($total)){
+            $netTotal = 0;
 
             ?>
             <thead>
@@ -70,9 +71,10 @@ include "include/head.php";
             <tbody>
             <tr class="cart_item">
                 <td class="product-name">
-                    Cart Total  </td>
+                    Cart Total
+                </td>
                 <td class="product-total">
-                    <span class="amount"><?php echo $total ?>Lei/-</span> </td>
+                    <span class="amount"><?php echo $total ?>Lei/-</span></td>
             </tr>
             </tbody>
             <tfoot>
@@ -87,7 +89,7 @@ include "include/head.php";
 
             <tr class="order-total">
                 <th>Order Total</th>
-                <td><strong><span class="amount"><?php echo $netTotal = $total + 25 ?>Lei/-</span></strong> </td>
+                <td><strong><span class="amount"><?php echo $netTotal = $total + 25 ?>Lei/-</span></strong></td>
             </tr>
 
             </tfoot>
@@ -115,56 +117,139 @@ include "include/head.php";
                                     <h3>Billing Details</h3>
 
                                     <?php
-                                    echo form_open('Checkout/confirmForm','class="checkout"')
+                                    echo form_open('Checkout/confirmForm', 'class="checkout"')
                                     ?>
                                     <p id="billing_first_name_field" class="form-row form-row-first validate-required">
-                                        <label class="" for="billing_first_name">First Name <abbr title="required" class="required">*</abbr>
+                                        <label class="" for="billing_first_name">First Name <abbr title="required"
+                                                                                                  class="required">*</abbr>
                                         </label>
-                                        <input type="text" value="" placeholder="Introduceti Numele" id="billing_first_name" name="fname" class="input-text" required="">
-                                        <input type="hidden" value="<?php echo $netTotal?>" placeholder="" id="billing_first_name" name="netTotal">
+                                        <input type="text" value="" placeholder="Introduceti Numele"
+                                               id="billing_first_name" name="fname" class="input-text" required="">
+                                        <input type="hidden" value="<?php echo $netTotal ?>" placeholder=""
+                                               id="billing_first_name" name="netTotal">
                                     </p>
 
                                     <p id="billing_last_name_field" class="form-row form-row-last validate-required">
-                                        <label class="" for="billing_last_name">Last Name <abbr title="required" class="required">*</abbr>
+                                        <label class="" for="billing_last_name">Last Name <abbr title="required"
+                                                                                                class="required">*</abbr>
                                         </label>
-                                        <input type="text" value="" placeholder="Introduceti Prenumele" id="billing_last_name" name="lname" class="input-text" required="">
+                                        <input type="text" value="" placeholder="Introduceti Prenumele"
+                                               id="billing_last_name" name="lname" class="input-text" required="">
                                     </p>
                                     <div class="clear"></div>
 
-                                    <p id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
-                                        <label class="" for="billing_address_1">Address<abbr title="required" class="required">*</abbr>
+                                    <p id="billing_address_1_field"
+                                       class="form-row form-row-wide address-field validate-required">
+                                        <label class="" for="billing_address_1">Address<abbr title="required"
+                                                                                             class="required">*</abbr>
                                         </label>
-                                        <input type="text" value="" placeholder="Introduceti Adresa" id="billing_address_1" name="address" class="input-text" required="">
+                                        <input type="text" value="" placeholder="Introduceti Adresa"
+                                               id="billing_address_1" name="address" class="input-text" required="">
                                     </p>
 
-                                    <p id="billing_country_field" class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated">
-                                        <label class="" for="billing_city">City<abbr title="required" class="required">*</abbr>
+                                    <p id="billing_country_field"
+                                       class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated">
+                                        <label class="" for="billing_city">City<abbr title="required"
+                                                                                     class="required">*</abbr>
                                         </label>
-                                        <input type="text" value = "" placeholder="Introduceti Orasul" id = "biling_cityname" name="city" class="input-text" required="">   
+                                        <input type="text" value="" placeholder="Introduceti Orasul"
+                                               id="biling_cityname" name="city" class="input-text" required="">
                                     </p>
 
                                     <div class="clear"></div>
 
-                                    <p id="billing_email_field" class="form-row form-row-first validate-required validate-email">
-                                        <label class="" for="billing_email">Email Address <abbr title="required" class="required">*</abbr>
+                                    <p id="billing_email_field"
+                                       class="form-row form-row-first validate-required validate-email">
+                                        <label class="" for="billing_email">Email Address <abbr title="required"
+                                                                                                class="required">*</abbr>
                                         </label>
-                                        <input type="text" value="" placeholder="" id="billing_email" name="email" class="input-text" required="">
+                                        <input type="text" value="" placeholder="" id="billing_email" name="email"
+                                               class="input-text" required="">
                                     </p>
 
-                                    <p id="billing_phone_field" class="form-row form-row-last validate-required validate-phone">
-                                        <label class="" for="billing_phone">Phone<abbr title="required" class="required">*</abbr>
+                                    <p id="billing_phone_field"
+                                       class="form-row form-row-last validate-required validate-phone">
+                                        <label class="" for="billing_phone">Phone<abbr title="required"
+                                                                                       class="required">*</abbr>
                                         </label>
-                                        <input type="text" required="" value="" placeholder="" id="billing_phone" name="phone" class="input-text ">
+                                        <input type="text" required="" value="" placeholder="" id="billing_phone"
+                                               name="phone" class="input-text ">
                                     </p>
 
-                                    <input type="submit" value="submit" class="add_to_cart_button" />
+                                    <h3>Payment</h3>
 
 
-                                    <?php
-                                    echo form_close();
-                                    ?>
+                                    <label for="FormControlSelect" name="paymentType"> Payment Type</label>
+                                    <select class="form-control" style="min-height: 50px" id="paymentType">
+                                        <option value="1">Plata la livrare</option>
+                                        <option value="2">Plata cu cardul</option>
+                                    </select>
+
+                                    <div id="cardInfo">
+                                        <div class="d-block my-3">
+                                            <div class="custom-control custom-radio" name="paymentMethod">
+                                                <input id="credit" name="paymentMethod" type="radio"
+                                                       class="custom-control-input" checked required>
+                                                <label class="custom-control-label" for="credit">Credit card</label>
+                                            </div>
+                                            <div class="custom-control custom-radio" name="paymentMethod">
+                                                <input id="debit" name="paymentMethod" type="radio"
+                                                       class="custom-control-input" required>
+                                                <label class="custom-control-label" for="debit">Debit card</label>
+                                            </div>
+                                            <div class="custom-control custom-radio" name="paymentMethod">
+                                                <input id="paypal" name="paymentMethod" type="radio"
+                                                       class="custom-control-input" required>
+                                                <label class="custom-control-label" for="paypal">PayPal</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3" name="paymentMethod">
+                                                <label for="cc-name">Name on card</label>
+                                                <input type="text" class="form-control" id="cc-name" placeholder=""
+                                                       required>
+                                                <small class="text-muted">Full name as displayed on card</small>
+                                                <div class="invalid-feedback">
+                                                    Name on card is required
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3" name="paymentMethod">
+                                                <label for="cc-number">Credit card number</label>
+                                                <input type="text" class="form-control" id="cc-number" placeholder=""
+                                                       required>
+                                                <div class="invalid-feedback">
+                                                    Credit card number is required
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3" name="paymentMethod">
+                                                <label for="cc-expiration">Expiration</label>
+                                                <input type="text" class="form-control" id="cc-expiration"
+                                                       placeholder="" required>
+                                                <div class="invalid-feedback">
+                                                    Expiration date required
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 mb-3" name="paymentMethod">
+                                                <label for="cc-cvv">CVV</label>
+                                                <input type="text" class="form-control" id="cc-cvv" placeholder=""
+                                                       required>
+                                                <div class="invalid-feedback">
+                                                    Security code required
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <input type="submit" value="submit" class="add_to_cart_button"/>
+
+
+                            <?php
+                            echo form_close();
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -172,7 +257,8 @@ include "include/head.php";
         </div>
     </div>
 </div>
-
+</div>
+</div>
 
 
 <?php
@@ -194,5 +280,21 @@ include "include/footer.php";
 
 <!-- Main Script -->
 <script src="<?php echo base_url() ?>assets/js/main.js"></script>
+<script>
+    $(function () {
+        let value;
+        $("#cardInfo").hide();
+        $("#paymentType").change(function (){
+            value = parseInt($(this).val());
+            if(value == 1) {
+                $("#cardInfo").fadeOut(1000)
+            } else {
+                $("#cardInfo").fadeIn(1000);
+            }
+        });
+
+    })
+</script>
 </body>
 </html>
+

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: asamad
- * Date: 6/30/17
- * Time: 4:22 PM
- */
+
 
 class Single extends CI_Controller
 {
@@ -15,7 +10,7 @@ class Single extends CI_Controller
 
         $data['product'] = $query->result();
 
-        $query = $this->Single_model->rel_pro();
+        $query = $this->Single_model->rel_pro($id);
 
         $data['relpro'] = $query->result();
 

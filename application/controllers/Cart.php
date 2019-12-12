@@ -8,6 +8,7 @@ class Cart extends CI_Controller
             $this->load->view('login');
         } else {
             $id = $_GET['id'];
+
             $u_id = $_SESSION['u_id'];
 
             $query = $this->Cart_model->check_pro($id, $u_id);
@@ -19,6 +20,7 @@ class Cart extends CI_Controller
 
 
             if ($id == "") {
+
                 $query = $this->Cart_model->find_max();
                 $c_id = 0;
                 foreach ($query->result() as $row) {
@@ -48,8 +50,8 @@ class Cart extends CI_Controller
                     'product_name' => $pro_name,
                     'product_price' => $pro_price,
                     'file_name' => $file_name,
-                    'quantity' => $quantity,
-                    'u_id' => $u_id
+                    'u_id' => $u_id,
+                    'quantity' => $quantity
                 );
 
 
@@ -65,7 +67,7 @@ class Cart extends CI_Controller
 
                 $u_id = $_SESSION['u_id'];
 
-                $this->Cart_model->upd_pro($qty, $id,$u_id);
+                $this->Cart_model->upd_pro($qty, $id, $u_id);
                 redirect('Shop');
             }
         }
@@ -106,6 +108,8 @@ class Cart extends CI_Controller
             redirect('Cart/viewCart');
         }
     }
+
+    
 
     function delItem(){
         $id = $_GET['id'];

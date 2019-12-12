@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: asamad
- * Date: 6/27/17
- * Time: 4:46 PM
- */
 
 class Login extends CI_Controller
 {

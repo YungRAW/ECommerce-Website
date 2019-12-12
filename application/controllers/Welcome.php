@@ -55,6 +55,24 @@ class Welcome extends CI_Controller {
         }
     }
 
+
+    public function favorites()
+    {
+        if(isset($_SESSION['email'])){
+            if($_SESSION['email'] != ''){
+                $this->load->view('favourites');
+            }
+        }
+        else{
+            ?>
+            <script>
+                alert('Access Denied');
+                window.location = "<?php echo base_url() ?>";
+            </script>
+            <?php
+        }
+    }
+
     public function single()
     {
         $id = $_GET['id'];

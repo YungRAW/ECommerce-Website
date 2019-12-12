@@ -1,5 +1,3 @@
-
-
 <div class="footer-top-area">
     <div class="zigzag-bottom"></div>
     <div class="container">
@@ -15,22 +13,6 @@
                         <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
                         <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
                         <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div  class="col-md-3 pull-right col-sm-6">
-                <div  class="footer-newsletter">
-                    <h2  class="footer-wid-title">Newsletter</h2>
-                    <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
-                    <div class="newsletter-form">
-                        <form action="#">
-                            <input type="email" placeholder="Type your email">
-                            <input type="submit" value="Subscribe">
-                        </form>
                     </div>
                 </div>
             </div>
